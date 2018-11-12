@@ -1,0 +1,106 @@
+/*头部*/
+header.bg-white{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	padding: 0 1rem;
+	line-height: 3rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.8rem;
+}
+.avatar-uploader{
+	width: 2.4rem;
+	height: 2.4rem;
+	align-self: center;
+}
+.avatar-uploader .el-upload{
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 1.2rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 0.3rem;
+}
+.avatar-uploader .el-upload img{
+	width: 100%;
+	height: 100%;
+	border-radius: 1.2rem;
+}
+/*列表*/
+ul.list{
+	background-color: #fff;
+	padding: 0 1rem;
+	font-size: 0.8rem;
+	margin-bottom: 0.25rem;
+}
+ul.list li{
+	line-height: 2.4rem;
+	border-bottom: 0.05rem solid rgb(237,237,237);
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+ul.list li:last-child{
+	border: none;
+}
+ul.list li .right{
+	font-size: 0.7rem;
+}
+.el-switch.is-checked .el-switch__core{
+	border-color: rgb(179,137,87) !important;
+	background-color: rgb(179,137,87) !important;
+}
+.el-switch__label{
+	color: rgb(123,123,123) !important;
+}
+.el-switch__label.is-active{
+	color: rgb(179,137,87) !important;
+}
+.el-switch__label *{
+	font-size: 0.7rem !important;
+}
+[v-cloak] {
+  display: none;
+}
+/**/
+::-webkit-input-placeholder{
+	color: #C0C0C0;
+	font-size: 0.7rem;
+}
+input[type=tel], input[type=text]{
+	margin-bottom: 0;
+	height: 2.3rem;
+	line-height: 2.3rem;
+	padding: 0;
+	text-align: right;
+	width: 12rem;
+	border: none;
+}
+input, select, textarea,.el-switch__label{
+	font-size: 0.7rem !important;
+}
+
+.mui-icon-arrowdown{
+	font-size: 0.8rem;
+}
+.textarea{
+	width: 18rem;
+}
+textarea{
+	margin-bottom: 0;
+	padding:0 0.6rem;
+	border:none;
+	border-bottom: 2px solid rgb(179,137,87);
+}
+footer{
+	width: 20rem;
+	display: flex;
+}
+button.save{
+	display: inline-block;
+	margin: 3rem auto;
+	width: 16rem;
+	border: none;
+	font-size: 0.9rem;
+	padding: 0.4rem 0;
+}

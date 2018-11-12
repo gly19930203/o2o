@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../spelling/css/commen-progress.css" />
+		<link rel="stylesheet" href="css/orderdetail.css" />
+	</head>
+
+	<body>
+		<main>
+			<ul>
+				<li class="imgdetail">
+					<div class="imgcontent">
+						<div class="img"><img id="f_icon"></div>
+						<div class="detail">
+							<div>
+								<p class="title" id="f_name"></p>
+								<p class="miaoshu ellipsis" id="f_outline"></p>
+							</div>
+							<div>
+								<span class="orange-circle" align="center">
+									<i class="iconfont icon-wodejiage"></i>
+								</span>
+								<span class="brown number"><span id="f_price">0</span>￥</span>
+								<span class="border"></span>
+								<span class="orange-circle" align="center">
+									<i class="iconfont icon-icon"></i>
+								</span>
+								<span class="brown number" id="f_popularity">0</span>
+								<span class="border"></span>
+								<span class="orange-circle" align="center">
+									<i class="iconfont icon-xin"></i>
+								</span>
+								<span class="brown number" id="f_follownumber">0</span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="titledetail">
+						订单信息
+					</div>
+					<div class="contentdetail">
+						<p id="f_ordernumber"></p>
+						<p id="f_orderdate"></p>
+						<p id="paystate"></p>
+					</div>
+				</li>
+				<li>
+					<div class="titledetail">
+						费用明细
+					</div>
+					<div class="contentdetail">
+						<p>
+							<span>+课程总额</span>
+							<span id="highest">0￥</span>
+						</p>
+						<p>
+							<span>-优惠</span>
+							<span>￥0.00</span>
+						</p>
+						<p>
+							<span>-正承卡/面值卡</span>
+							<span>￥0.00</span>
+						</p>
+					</div>
+					<div class="pricedetail">
+						<p>
+							<span>总费用</span>
+							<span id="price">0￥</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="titledetail">
+						<span>满返信息</span>
+						<span class="tishi orange">返现金额要等课程完成3天后到账</span>
+					</div>
+					<div class="contentdetail">
+						<p>
+							<span>+最高返现</span>
+							<span id="maxreturn">0￥</span>
+						</p>
+						<p>
+							<span>-现有返现</span>
+							<span id="nowreturn">0￥</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</main>
+		<footer id="footer">
+			<div id="cancel">取消订单</div>
+			<div id="prepay">立即支付</div>
+		</footer>
+		<div class="mask" id="mask"></div>
+        <div id="alipay" style="display:none"></div>
+		<div class="payalert" id="payalert">
+			<div class="paytitle">请选择支付方式</div>
+			<div class="paylist">
+				<ul class="mui-table-view mui-table-view-radio">
+					<li class="mui-table-view-cell" id="zhifubao">
+						<a class="mui-navigate-right">
+							<span class="iconfont icon-zhifubao"></span>
+							<span>支付宝支付</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-selected" id="wechat">
+						<a class="mui-navigate-right">
+							<span class="iconfont icon-pay-wechat"></span>
+							<span>微信支付</span>
+						</a>
+					</li>
+					<!--<li class="mui-table-view-cell" id="yizhifu">
+						<a class="mui-navigate-right">
+							<span class="iconfont icon-yizhifu01"></span>
+							<span>翼支付支付</span>
+						</a>
+					</li>-->
+				</ul>
+			</div>
+			<button class="bg-orange paybtn" id="pay">立即支付</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/root.js" ></script>
+        <script type="text/javascript" src="js/ap.js"></script>
+		<script type="text/javascript" src="js/orderdetail.js?v=1.0.3" ></script>
+	</body>
+
+</html>

@@ -1,0 +1,167 @@
+header{
+	padding: 0.6rem;
+}
+header>div{
+	background-color: #fff;
+	border-radius: 0.4rem;
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	justify-content: flex-start;
+}
+header .headimg{
+	width: 18%;
+	display: flex;
+	justify-content: center;
+}
+header .data{
+	width: 57%;
+	display: flex;
+}
+header .todetail{
+	width: 24%;
+}
+header .headimg .ring{
+	width: 2.24rem;
+	height: 2.24rem;
+	border-radius: 1.12rem;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	padding: 0.15rem;
+	background: url(../../image/head.png) content-box no-repeat;
+	background-size: cover;
+}
+
+header .data>div{
+	height: 2.4rem;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+header .data .name{
+	font-size: 0.8rem;
+}
+header .data .phone,header .todetail,header .todetail span{
+	font-size: 0.65rem;
+}
+header .todetail{
+	text-align: center;
+	line-height: 3.5rem;
+}
+header .data .phone{
+	color: #b8b8b8;
+}
+/*内容*/
+.content{
+	margin-bottom: 1.8rem;
+}
+.content .mui-table-view:before{
+	height: 0;
+}
+.content .mui-table-view-cell:after{
+	left: 1.2rem;
+	right: 1.2rem;
+	background-color:rgb(237,237,237);
+}
+.content .mui-table-view{
+	margin-bottom: 0.3rem;
+}
+.content .mui-table-view-cell.title{
+	font-size: 0.8rem;
+}
+.mui-table-view-cell.mui-active{
+	background-color: #fff;
+}
+.content .mui-table-view-cell{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+	padding: 0 1.2rem;
+	line-height: 2.4rem;
+	font-size: 0.7rem;
+	flex-flow: wrap;
+}
+.content .mui-table-view-cell.todetail{
+	justify-content: space-between;
+}
+.content .mui-table-view-cell .left{
+	width: 5.2rem;
+}
+.content .mui-table-view-cell .mui-icon-arrowright,.mui-icon-arrowdown{
+	font-size: 0.9rem;
+	align-self: center;
+}
+.content .mui-table-view-cell.todetail .right{
+	color: #b8b8b8;
+	font-size: 0.7rem;
+	line-height: 2.4rem;
+}
+.content .mui-table-view-cell .flexrow{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start;
+}
+.content .mui-table-view-cell .courseorder{
+	font-weight: bold;
+}
+.content .mui-table-view-cell.colum{
+	flex-direction: column;
+	padding: 0.6rem 1.2rem;
+}
+.content .mui-table-view-cell.colum>div{
+	line-height: 1.8rem;
+}
+
+input{
+	font-size: 1rem;
+}
+/*上课地址*/
+.ui-alert{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	width: 100%;
+	width: 11.8rem;
+}
+/*上课时间*/
+.content .mui-table-view-cell.colum .coursetime,.colum .mui-input-row label{
+	line-height: 1.8rem;
+}
+.mui-radio.mui-left input[type=radio],.mui-checkbox.mui-left input[type=checkbox]{
+	top: -0.1rem;
+}
+.coursetime{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-flow: wrap;
+	line-height: 2.4rem;
+}
+/*描述*/
+.textarea{
+	width:17.6rem;
+}
+.textarea textarea{
+	font-size: 0.7rem;
+}
+/*底部*/
+footer{
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 30;
+	left: 0;
+}
+footer div{
+	width: 50%;
+	background-color: rgb(179,137,87);
+	color: #fff;
+	text-align: center;
+	font-size: 0.7rem;
+	line-height: 1.8rem;
+	height: 1.8rem;
+}

@@ -1,0 +1,177 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>老师详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/quill.snow.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/comment.css" />
+		<link rel="stylesheet" href="../css/previewimage.css" />
+    	<link rel="stylesheet" href="../css/icons-extra.css" />
+		<link rel="stylesheet" href="../css/index-list.css" />
+		<link rel="stylesheet" href="../css/pullfresh.css" />
+		<link rel="stylesheet" href="css/teacher.css?v=1.3" />
+        <script type="text/javascript" src="../js/root.js"></script>
+        <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+		<script>
+            var code = Request("code");
+            if (Request("teacherId")) {
+                window.localStorage.teacherId = Request("teacherId");
+            }
+            var url = encodeURIComponent("http://www.ty-sx.com/html/o2o.html?page=teacher");
+            if (!code && !window.localStorage.Auth) {
+                window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx076bffe390fc5406&redirect_uri=" + url + "&response_type=code&scope=snsapi_base&state=1#wechat_redirect";
+            }
+			require = {
+				baseUrl: './js',
+				paths: {
+			        'jquery': '../../js/jquery.min',
+			        'h5': '../../js/h5.js?modify=2170607#',
+				}
+			}
+		</script>
+		<script data-main="h5" src="../js/require.min.js"></script>
+	</head>
+
+	<body>
+		<header class="bg-brown">
+			<div class="tea-img" id="f_head_portrait"></div>
+			<div class="tea-info">
+				<div class="infos white">
+					<span class="name" id="f_name"></span>
+					<span class="iconfont icon-hot orange"></span>
+					<span class="iconfont icon-nv" id="f_sex"></span>
+				</div>
+				<div class="labels" id="evaluationtagName">
+					
+				</div>
+			</div>
+			<div class="popular">
+				<span class="iconfont icon-hot1 orange"></span>
+				<span class="orange" id="f_popularity">0</span>
+			</div>
+		</header>
+		<div class="mui-content">
+			<div>
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">评论</a>
+					<a class="mui-control-item" href="#item2">课程</a>
+					<a class="mui-control-item" href="#item3">相册</a>
+					<a class="mui-control-item" href="#item4">详细信息</a>
+				</div>
+			</div>
+			<div class="contents">
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="score bg-white">
+						<div class="number orange" id="score">0</div>
+						<div class="star">
+							<p>综合评分</p>
+							<p class="icons mui-inline" id="icons">
+								<!--<i data-index="1" class="iconfont icon-pingfen2 orange"></i>
+								<i data-index="2" class="iconfont icon-pingfen1 orange"></i>
+								<i data-index="3" class="iconfont icon-pingfen1 orange"></i>
+								<i data-index="4" class="iconfont icon-pingfen1 orange"></i>
+								<i data-index="5" class="iconfont icon-pingfen1 orange"></i>-->
+							</p>
+						</div>
+					</div>
+					<div class="labels" id="labels">
+						<!--<p class="active">老师热情<span>107</span></p>
+						<p>质量高<span>45</span></p>
+						<p>回头客<span>26</span></p>
+						<p>内容丰富<span>18</span></p>-->
+					</div>
+					<div class="arrowdown">
+						<span class="mui-icon mui-icon-arrowdown"></span>
+					</div>
+					
+					<div class="container">
+						<ul class="comment content" id="comments">
+							<!--<li>
+								<div class="commentimg"></div>
+								<div class="comments">
+									<div class="customer">
+										<div class="name">AriesHAha</div>
+										<div class="star">
+											<p class="icons mui-inline">
+												<i data-index="1" class="iconfont icon-pingfen2 orange"></i>
+												<i data-index="2" class="iconfont icon-pingfen1 orange"></i>
+												<i data-index="3" class="iconfont icon-pingfen1 orange"></i>
+												<i data-index="4" class="iconfont icon-pingfen1 orange"></i>
+												<i data-index="5" class="iconfont icon-pingfen1 orange"></i>
+											</p>
+											<p class="time">2017-06-30</p>
+										</div>
+									</div>
+									<div class="words">
+										So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions,I seemed distinctly to perceive that my own individuality was now merged in a joint stock company of two.
+									</div>
+									<div class="imgs">
+										<img src="../image/3-141014100632.jpg" data-preview-src="" data-preview-group="1"/>
+										<img src="../image/courseimg.png" data-preview-src="" data-preview-group="1"/>
+										<img src="../image/headerimg.png" data-preview-src="" data-preview-group="1"/>
+									</div>
+								</div>
+							</li>-->
+						</ul>
+					</div>
+					<div class="x-pullfresh-more"></div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul id="content">
+						<!--<li class="bg-white">
+							<div class="img"><img src="../image/courseimg.png"></div>
+							<div class="detail">
+								<div>
+									<p class="title">心理学读书会</p>
+									<p class="miaoshu">直面内心的恐惧</p>
+								</div>
+								<div>
+									<span class="orange-circle" align="center">
+										<i class="iconfont icon-wodejiage"></i>
+									</span>
+									<span class="brown number">100￥</span>
+									<span class="border"></span>
+									<span class="orange-circle" align="center">
+										<i class="iconfont icon-icon"></i>
+									</span>
+									<span class="brown number">98</span>
+								</div>
+							</div>
+							<div class="todetail" align="center">
+								<span class="mui-icon-extra mui-icon-extra-arrowrightcricle"></span>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+				<div id="item3" class="mui-control-content bg-white">
+					<div class="photo">照片墻</div>
+					<div class="imglist" id="imglist">
+					</div>
+				</div>
+				<div id="item4" class="mui-control-content ql-snow">
+		            <div id="teacherdetail" class="ql-editor">
+		            </div>
+				</div>
+			</div>
+		</div>
+		<div class="toIndex" id="toIndex">
+			<span class="iconfont icon-weibiaoti1 orange"></span>
+		</div>
+		<footer id="concern">
+			关注
+		</footer>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/mui.zoom.js" ></script>
+		<script type="text/javascript" src="../js/mui.previewimage.js" ></script>
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="js/teacher.js?v=1.4" ></script>
+		<script type="text/javascript" src="js/tea-evaluate.js" ></script>
+		<script type="text/javascript" src="js/tea-course.js" ></script>
+	</body>
+
+</html>

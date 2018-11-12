@@ -1,0 +1,27 @@
+.container{}
+/***下拉刷新样式***/
+.x-pullfresh-wrapper{position:fixed;left:0;top:10rem;width:100%;height:42px;margin:0 auto;z-index:10;opacity:0}
+.x-pullfresh-wrapper .x-pullfresh-loading{position:relative;width:40px;height:40px;overflow:hidden;background-color:rgba(255,255,255,0.9);border:1px solid rgba(230,230,230,0.5);border-radius:36px;margin:0 auto;text-align: center;line-height: 40px;-webkit-transition: all 1s;-moz-transition:all 1s;-o-transition:all 1s;}
+.x-pullfresh-wrapper .x-pullfresh-canvas{margin:4px 4px}
+.x-pullfresh-wrapper .x-pullfresh-svg.x-on,.x-pullfresh-wrapper .x-pullfresh-canvas.x-on{-webkit-animation:loading 1s linear infinite;-webkit-transform:rotate(0);animation:loading 1s linear infinite;transform:rotate(0)}
+.x-pullfresh-wrapper .x-pullfresh-svg{width:100%;height:100%}
+.x-pullfresh-wrapper .x-pullfresh-path{stroke-linecap: round;stroke: rgb(52, 190, 51);fill: none;stroke-width: 1px;}
+.x-pullfresh-wrapper #x-pullfresh-arrow path{fill: rgb(52, 190, 51);}
+/***更多数据样式***/
+.pullfresh-up{line-height:30px;overflow:hidden;text-align:center;transition-duration:600ms;margin-bottom:20px}
+.pullfresh-up .loader{font-size:0px;padding:0px;display:none}
+.pullfresh-up .loader span{vertical-align:middle;border-radius:100%;display:inline-block;width:10px;height:10px;margin:0 2px;-webkit-animation:pfloader 0.8s linear infinite alternate;animation:pfloader 0.8s linear infinite alternate}
+.pullfresh-loading .loader{display:block}
+.pullfresh-up .pullfresh-label{font-size:12px;color:#999;display:none}
+.pullfresh-up.no-more .pullfresh-label{display:block}
+.no-more .pullfresh-label{display:block}
+.pullfresh-up .loader span:nth-child(1){-webkit-animation-delay:-1s;animation-delay:-1s;background:rgba(245,103,115,0.6)}
+.pullfresh-up .loader span:nth-child(2){-webkit-animation-delay:-0.8s;animation-delay:-0.8s;background:rgba(245,103,115,0.8)}
+.pullfresh-up .loader span:nth-child(3){-webkit-animation-delay:-0.26666s;animation-delay:-0.26666s;background:rgba(245,103,115,1)}
+.pullfresh-up .loader span:nth-child(4){-webkit-animation-delay:-0.8s;animation-delay:-0.8s;background:rgba(245,103,115,0.8)}
+.pullfresh-up .loader span:nth-child(5){-webkit-animation-delay:-1s;animation-delay:-1s;background:rgba(245,103,115,0.4)}
+@keyframes pfloader{from{transform:scale(0,0)}
+to{transform:scale(1,1)}
+}@-webkit-keyframes pfloader{from{-webkit-transform:scale(0,0)}
+to{-webkit-transform:scale(1,1)}
+}

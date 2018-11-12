@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发表评论</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="css/evaluate.css" />
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	</head>
+
+	<body>
+		<div id="app" v-cloak>
+			<main>
+				<ul>
+					<li>
+						<div class="top">
+							<div class="img">
+								<img :src="img_host+imgCourse" />
+							</div>
+							<div class="eval">
+								<div class="mui-inline">课程评价</div>
+								<el-rate v-model="rateCourse" show-text :texts=rateCourseArray> </el-rate>
+							</div>
+						</div>
+						<div class="labels">
+						    <el-checkbox-group v-model="checkboxCourseGroup">
+						      	<el-checkbox-button v-for="item in labelCourseOptions" :label="item.f_id" :key="item.f_id">{{item.f_name}}</el-checkbox-button>
+						    </el-checkbox-group>
+						</div>
+						<div class="evaluate">
+							<textarea rows="3" placeholder="课程满足你的期待嘛？说说你上课心得，分享给想上的他们吧" v-model="textCourse"></textarea>
+							<el-upload class="upload" :action="uploadUrl" :headers="headers" list-type="picture-card" :on-success="handlePhotosSuccess" :before-upload="beforeAvatarUpload" :on-remove="handleRemove">
+								<i class="el-icon-plus"></i>
+							</el-upload>
+						</div>
+						<div class="niming">
+							<el-checkbox v-model="checkedCourse">匿名</el-checkbox>
+							<div class="right">你写的评价会以匿名的形式展现</div>
+						</div>
+					</li>
+					<li>
+						<div class="top">
+							<div class="img">
+							  <img v-if="imgTeacher" :src="img_host+imgTeacher">
+		                      <img v-else src="/o2owebapp/image/head.png">
+							</div>
+							<div class="eval">
+								<div class="mui-inline">老师评价</div>
+								<el-rate v-model="rateTeacher" show-text :texts=rateTeacherArray> </el-rate>
+							</div>
+						</div>
+						<div class="labels">
+						    <el-checkbox-group v-model="checkboxTeacherGroup">
+						      	<el-checkbox-button v-for="item in labelTeacherOptions" :label="item.f_id" :key="item.f_id">{{item.f_name}}</el-checkbox-button>
+						    </el-checkbox-group>
+						</div>
+						<div class="evaluate">
+							<textarea rows="3" placeholder="课程满足你的期待嘛？说说你上课心得，分享给想上的他们吧" v-model="textTeacher"></textarea>
+							<el-upload class="upload" :action="uploadUrl" :headers="headers" list-type="picture-card" :on-success="handlePhotosSuccess2" :before-upload="beforeAvatarUpload" :on-remove="handleRemove2">
+								<i class="el-icon-plus"></i>
+							</el-upload>
+						</div>
+						<div class="niming">
+							<el-checkbox v-model="checkedTeacher">匿名</el-checkbox>
+							<div class="right">你写的评价会以匿名的形式展现</div>
+						</div>
+					</li>
+				</ul>
+			</main>
+			<footer>
+				<button class="bg-brown white save" @click="Save">保存</button>
+			</footer>
+		</div>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="../js/root.js"></script>
+		<script type="text/javascript" src="js/evaluate.js"></script>
+	</body>
+
+</html>

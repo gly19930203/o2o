@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>正在拼</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/pulldown.css" />
+		<link rel="stylesheet" href="../css/calendar.css" />
+		<link rel="stylesheet" href="css/spelling.css" />
+		<link rel="stylesheet" href="css/commen-progress.css" />
+	</head>
+
+	<body>
+		<div class="screen bg-brown" id="screen">
+			<ul class="screen-tab">
+				<li class="area">
+					<span id="area">区域</span>
+					<span class="icon bg-brown">
+						<span class="mui-icon mui-icon-arrowdown" id="area-icon"></span>
+					</span>
+				</li>
+				<li class="sort">
+					<span id="sort">智能排序</span>
+					<span class="icon bg-brown">
+						<span class="mui-icon mui-icon-arrowdown" id="sort-icon"></span>
+					</span>
+				</li>
+				<li class="date">
+					<span id="date">日期</span>
+					<span class="icon bg-brown">
+						<span class="mui-icon mui-icon-arrowdown" id="date-icon"></span>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<!--区域-->
+		<div class="screen-content area-content" id="area-content">
+	        <ul class="dizhia-w" id="dizhia">
+	            <!--<li onclick="dizhia(this)">全部分类</li>-->
+	            
+	        </ul>
+	        <ul class="dizhia-t" id="dizhib">
+	            <!--<li onclick="dizhib(this)">小天鹅 <span class="xiaobiao1">1225</span></li>-->
+	        </ul>
+	    </div>
+	    <!--智能排序-->
+		<div class="screen-content sort-content">
+	        <ul>
+	            <li onclick="Sorts(this,'f_create_time','desc')">智能排序</li>
+	            <li onclick="Sorts(this,'t_course.f_price','asc')">价格最低</li>
+	            <li onclick="Sorts(this,'t_course.f_price','desc')">价格最高</li>
+	            <li onclick="Sorts(this,'t_course.f_popularity','desc')">人气最高</li>
+	            <li onclick="Sorts(this,'t_course.f_score','desc')">评价最好</li>
+	            <li onclick="Sorts(this,'t_course.f_create_time','desc')">最新上线</li>
+	        </ul>
+	    </div>
+		<!--日期-->
+		<div class="screen-content date-content">
+	        <ul id="date">
+				<div id="demo">
+				  <div id="ca"></div>
+				</div>
+	        </ul>
+	   </div>
+		<main>
+			<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul id="content">
+						<!--<li>
+							<div>
+								<div class="info">
+									<div class="img"></div>
+									<div class="detail">
+										<span class="title">秦开朗</span>
+										<span class="time">2017-10-26</span>
+										<span class="jianshu ellipsis">会员发起的拼课简述</span>
+									</div>
+									<div class="number">
+										<canvas id="my_html"></canvas>
+										<p>
+											<span>成拼6人</span>
+											<span>最多10人</span>
+										</p>
+									</div>
+								</div>
+								<div class="status">
+									<p class="time">
+										<span class="iconfont icon-yanchurili orange"></span>
+										<span>2017-11-20 14:30</span>
+									</p>
+									<p class="school">
+										<span class="iconfont icon-didian orange"></span>
+										<span>徐汇交大本部</span>
+									</p>
+									<p class="over">
+										<span>剩余<span class="orange">10</span>天</span>
+									</p>
+								</div>
+								<div class="imgcontent">
+									<div class="img"><img src="../image/spelling.png"></div>
+									<div class="detail">
+										<div>
+											<p class="title">心理学读书会</p>
+											<p class="miaoshu">直面内心的恐惧</p>
+										</div>
+										<div>
+											<span class="orange-circle" align="center">
+												<i class="iconfont icon-wodejiage"></i>
+											</span>
+											<span class="brown number">100￥</span>
+											<span class="border"></span>
+											<span class="orange-circle" align="center">
+												<i class="iconfont icon-icon"></i>
+											</span>
+											<span class="brown number">98</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<button class="bg-orange white">
+									<span class="word">立即加入</span>
+									<span class="mui-icon mui-icon-arrowright"></span>
+								</button>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!--遮罩层-->
+		<div class="mask"></div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/root.js" ></script>
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/pulldown-calendar.js" ></script>
+		<script type="text/javascript" src="js/pulldown.js" ></script>
+		<script type="text/javascript" src="../js/progress.js" ></script>
+		<script type="text/javascript" src="js/spelling.js?v=1.1" ></script>
+	</body>
+
+</html>

@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>拼课详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/quill.snow.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="css/spelldetail.css" />
+		<link rel="stylesheet" href="css/commen-progress.css" />
+	</head>
+
+	<body>
+		<main>
+			<ul>
+				<li>
+					<div class="title bg-brown white">正在拼</div>
+					<div class="list bg-white">
+						<div class="imgcontent">
+							<div class="img">
+								<div class="label">
+									<p><span id="f_number">0</span>讲</p>
+								</div>
+								<img id="spelling">
+							</div>
+							<div class="detail">
+								<div>
+									<p class="title" id="coursename"></p>
+									<p class="miaoshu" id="courseoutline"></p>
+								</div>
+								<div>
+									<span class="orange-circle" align="center">
+										<i class="iconfont icon-wodejiage"></i>
+									</span>
+									<span class="brown number"><span id="price">0</span>￥</span>
+									<span class="border"></span>
+									<span class="orange-circle" align="center">
+										<i class="iconfont icon-icon"></i>
+									</span>
+									<span class="brown number" id="coursepopu">0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list bg-white">
+						<div class="info">
+							<div class="img" id="userhead"></div>
+							<div class="detail">
+								<span class="title" id="username"></span>
+								<span class="time" id="f_create_time"></span>
+								<span class="jianshu ellipsis" id="usercontent"></span>
+							</div>
+							<div class="number">
+								<canvas id="mycanvas"></canvas>
+								<p>
+									<span>成拼<span id="f_minpeople">0</span>人</span>
+									<span>最多<span id="f_maxpeople">0</span>人</span>
+								</p>
+							</div>
+						</div>
+						<div id="courseinfolist">
+							<!--<div class="status">
+								<div class="courseorder">1讲</div>
+								<div class="coursedetail">
+									<p class="time">
+										<span class="iconfont icon-yanchurili orange"></span>
+										<span>2017-11-20 14:30</span>
+									</p>
+									<p class="school">
+										<span class="iconfont icon-didian orange"></span>
+										<span>徐汇交大本部</span>
+									</p>
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="title bg-brown white">已拼学员</div>
+					<div class="students list" id="userlist">
+						<!--<div class="headimg" style="background-image: url(../image/3-141014100632.jpg);"></div>-->
+					</div>
+				</li>
+				<li>
+					<div class="title bg-brown white">拼课须知</div>
+					<div class="consultate">
+						<p id="f_lessonnotes"></p>
+						<a class="click white"  href="tel://021-60963246">
+							拼前咨询
+						</a>
+					</div>
+				</li>
+			</ul>
+		</main>
+		
+		<footer class="more" id="more">
+			<div id="morecourse">更多课程</div>
+			<div id="join">立即加入</div>
+		</footer>
+		
+		<footer class="invitation" id="invitation">
+			<div>邀请朋友</div>
+		</footer>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/root.js" ></script>
+		<script type="text/javascript" src="../js/progress.js" ></script>
+		<script type="text/javascript" src="js/spelldetail.js?v=1.1" ></script>
+	</body>
+
+</html>

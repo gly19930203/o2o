@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>课程详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/quill.snow.css"/>
+		<style>
+			body{
+				background-color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+        <div class="ql-snow">
+            <div id="content" class="ql-editor">
+            </div>
+        </div>
+        <script src="../js/root.js"></script>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript">
+            mui.init();
+            if(Request("id")){
+	            getAPIasync("/BaseData/GetDetailed", "id=" + Request("id"), "get", function (e) {
+	                document.getElementById("content").innerHTML = e;
+	            });
+            }else{
+                getAPIasync("/Course/GetCourseEntityDetail", "pId=" + Request("pCourseId"), "get", function (e) {
+	                if(e){
+	                	document.getElementById("content").innerHTML = e.f_detailed;
+	                }
+	            });
+            }
+		</script>
+	</body>
+
+</html>

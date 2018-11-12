@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="css/myorder.css" />
+	</head>
+
+	<body>
+		<main>
+			<ul id="list">
+				<!--<li>
+					<div class="title bg-brown white">拼课</div>
+					<div class="list bg-white">
+						<div class="imgcontent">
+							<div class="img"><img src="../image/spelling.png"></div>
+							<div class="detail">
+								<div class="top">
+									<p class="title">古琴昆曲赏析教学体验</p>
+									<p>非遗双璧 水磨丝桐</p>
+								</div>
+								<div class="bottom">
+									<p>共<span class="number">1</span>项课程</p>
+									<p>合计：<span class="number">￥321</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="payment">
+							<p>未支付</p>
+							<p class="right">
+								<span>取消订单</span>
+								<span class="orange">立即支付</span>
+							</p>
+						</div>
+					</div>
+				</li>-->
+			</ul>
+		</main>
+		
+		<div class="mask" id="mask"></div>
+		<div class="payalert" id="payalert">
+			<div class="paytitle">请选择支付方式</div>
+			<div class="paylist">
+				<ul class="mui-table-view mui-table-view-radio">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<span class="iconfont icon-zhifubao"></span>
+							<span>支付宝支付</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-selected">
+						<a class="mui-navigate-right">
+							<span class="iconfont icon-pay-wechat"></span>
+							<span>微信支付</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right">
+							<span class="iconfont icon-yizhifu01"></span>
+							<span>翼支付支付</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<button class="bg-orange paybtn">立即支付</button>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/root.js" ></script>
+		<script type="text/javascript" src="js/myorder.js?v=1.1" ></script>
+	</body>
+
+</html>

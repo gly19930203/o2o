@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>爱拼课</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/icons-extra.css" />
+    <link rel="stylesheet" href="../css/iconfont.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="../css/pulldown.css" />
+    <link rel="stylesheet" href="../css/index-list.css" />
+    <script type="text/javascript" src="../js/root.js"></script>
+    <script>
+        var code = Request("code");
+        var domain = Request("domain");
+        if (!domain) {
+            domain = window.localStorage.Domain ? window.localStorage.Domain : "zc";
+        }
+        var url = encodeURIComponent("http://www.ty-sx.com/html/o2o.html?domain=" + domain + "&page=index");
+        if(!code && (!window.localStorage.Domain || window.localStorage.Domain != domain)){
+            window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx076bffe390fc5406&redirect_uri=" + url + "&response_type=code&scope=snsapi_base&state=1#wechat_redirect";
+        }
+    </script>
+</head>
+<body>
+	<header>
+		<div align="center" class="top">
+			<div class="img">
+				<img src="../image/icon-bg.png" />
+				<div class="icon"><i class="iconfont icon-comments"></i></div>
+			</div>
+			<div class="word">
+				<p class="brown news">消息</p>
+				<p class="brown news-en">News</p>
+			</div>
+		</div>
+		<div align="center" class="top" id="tospelling">
+			<div class="img">
+				<img src="../image/icon-bg.png" />
+				<div class="icon"><i class="iconfont icon-mulu"></i></div>
+			</div>
+			<div class="word">
+				<p class="brown news">正在拼</p>
+				<p class="brown news-en">Pooling</p>
+			</div>
+		</div>
+		<div align="center" class="top" id="toaccount">
+			<div class="img">
+				<img src="../image/icon-bg.png" />
+				<div class="icon"><i class="iconfont icon-my"></i></div>
+			</div>
+			<div class="word">
+				<p class="brown news">我的</p>
+				<p class="brown news-en">My</p>
+			</div>
+		</div>
+	</header>
+	<div class="screen bg-brown" id="screen">
+		<ul class="screen-tab">
+			<li class="category">
+				<span id="category">类别</span>
+				<span class="icon bg-brown">
+					<span class="mui-icon mui-icon-arrowdown" id="category-icon"></span>
+				</span>
+			</li>
+			<li class="coursesys">
+				<span id="coursesys">课制</span>
+				<span class="icon bg-brown">
+					<span class="mui-icon mui-icon-arrowdown" id="coursesys-icon"></span>
+				</span>
+			</li>
+			<li class="sort">
+				<span id="sort">智能排序</span>
+				<span class="icon bg-brown">
+					<span class="mui-icon mui-icon-arrowdown" id="sort-icon"></span>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<!--类别-->
+	<div class="screen-content category-content" id="category-content">
+        <ul id="category-list">
+            <!--<li onclick="Categorys(this)">全部 (3257)</li>
+            <li onclick="Categorys(this)">心理学 (370)</li>
+            <li onclick="Categorys(this)">艺术类 (1220)</li>
+            <li onclick="Categorys(this)">体育类 (420)</li>
+            <li onclick="Categorys(this)">文化类 (396)</li>
+            <li onclick="Categorys(this)">IT类 (204)</li>
+            <li onclick="Categorys(this)">餐饮类 (647)</li>-->
+        </ul>
+    </div>
+    <!--课制-->
+	<div class="screen-content coursesys-content" id="coursesys-content">
+        <ul id="coursesys-list">
+            <!--<li onclick="Coursesys(this)">全部 (3257)</li>
+            <li onclick="Coursesys(this)">体验 (1000)</li>
+            <li onclick="Coursesys(this)">专业 (2257)</li>-->
+        </ul>
+    </div>
+	<!--智能排序-->
+	<div class="screen-content sort-content" id="sort-content">
+        <ul>
+            <li onclick="Sorts(this,'f_create_time','desc')">智能排序</li>
+            <li onclick="Sorts(this,'f_price','asc')">价格最低</li>
+            <li onclick="Sorts(this,'f_price','desc')">价格最高</li>
+            <li onclick="Sorts(this,'f_popularity','desc')">人气最高</li>
+            <li onclick="Sorts(this,'f_score','desc')">评价最好</li>
+            <li onclick="Sorts(this,'f_create_time','desc')">最新上线</li>
+        </ul>
+    </div>
+	<main>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul id="content">
+					<!--<li class="bg-white">
+						<div class="img"><img src="../image/courseimg.png"></div>
+						<div class="detail">
+							<div>
+								<p class="title">心理学读书会</p>
+								<p class="miaoshu">直面内心的恐惧</p>
+							</div>
+							<div>
+								<span class="orange-circle" align="center">
+									<i class="iconfont icon-wodejiage"></i>
+								</span>
+								<span class="brown number">100￥</span>
+								<span class="border"></span>
+								<span class="orange-circle" align="center">
+									<i class="iconfont icon-icon"></i>
+								</span>
+								<span class="brown number">98</span>
+							</div>
+						</div>
+						<div class="todetail" align="center">
+							<span class="mui-icon-extra mui-icon-extra-arrowrightcricle"></span>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer align="center">
+		<button class="btn bg-orange" id="tospelladd">发起拼课</button>
+	</footer>
+	<!--遮罩层-->
+	<div class="mask"></div>
+    <script src="../js/mui.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.js" ></script>
+    <script type="text/javascript" src="js/index.js?v=1.0.0" ></script>
+    <script type="text/javascript" src="js/pulldown.js" ></script>
+</body>
+</html>

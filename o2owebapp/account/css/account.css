@@ -1,0 +1,96 @@
+/*头部*/
+header{
+	width: 100%;
+	height: 5.4rem;
+	display: flex;
+	justify-content: flex-start;
+	padding: 0 1rem;
+}
+header .headimg{
+	width: 26%;
+	display: flex;
+	justify-content: center;
+}
+header .data{
+	width: 54%;
+	display: flex;
+	padding-left: 0.8rem;
+}
+header .todetail{
+	width: 24%;
+}
+
+header .headimg{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 2rem;
+	border: 0.15rem solid rgb(217,196,171);
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	padding: 0.15rem;
+	background: url(../../image/head.png) content-box no-repeat;
+	background-size: cover;
+}
+header .headimg img{
+	width: 100%;
+	height: 100%;
+	border-radius: 2rem;
+}
+header .data>div{
+	height: 2.4rem;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+header .data .name{
+	font-size: 1rem;
+}
+header .data .phone,header .todetail,header .todetail span{
+	font-size: 0.8rem;
+}
+header .todetail{
+	text-align: center;
+	line-height: 5.4rem;
+	color: rgb(217,196,171);
+}
+/*提示*/
+.tips{
+	font-size: 0.7rem;
+	text-align: center;
+	line-height: 1.6rem;
+}
+/*列表*/
+ul.list{
+	background-color: #fff;
+	padding: 0 1rem;
+	font-size: 0.8rem;
+	margin-bottom: 0.2rem;
+}
+ul.list li .iconfont{
+	font-size: 1.2rem;
+	vertical-align: middle;
+	padding-right: 0.4rem;
+}
+ul.list li{
+	line-height: 2.4rem;
+	border-bottom: 0.05rem solid rgb(237,237,237);
+	display: flex;
+	justify-content: space-between;
+}
+ul.list li:last-child{
+	border: none;
+}
+ul.list li .number{
+	color: rgb(183,183,183);
+}
+ul.list li .newsnumber{
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 0.8rem;
+	text-align: center;
+	align-self: center;
+	line-height: 1.6rem;
+}
+

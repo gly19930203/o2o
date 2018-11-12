@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发起拼课</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="css/spelladd.css" />
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<div class="headimg">
+					<div class="ring" id="f_head_portrait">
+					</div>
+				</div>
+				<div class="data">
+					<div>
+						<p class="name" id="f_name"></p>
+						<p class="phone">
+							<span id="f_phone"></span>	
+						</p>
+					</div>
+				</div>
+				<div class="todetail orange" id="toPersonal">
+					补全资料<span class="mui-icon mui-icon-arrowright"></span>
+				</div>
+			</div>
+		</header>
+		<main class="content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell title">
+					<div class="left">课程名称</div>
+					<div class="right" id="course"></div>
+					<div class="right ui-alert" id="coursePicker">
+						<span id="courseResult">请选择课程</span>
+						<span class="mui-icon mui-icon-arrowdown"></span>
+					</div>
+				</li>
+				<ul class="mui-table-view" id="coursenumber">
+					<!--<li class="mui-table-view-cell colum">
+						<div class="courseorder">1讲</div>
+						<div class="flexrow">
+							<div class="left">上课时间</div>
+							<div class="right coursetime">
+								<div class="mui-input-row mui-radio  mui-left">
+									<label>任意时间</label>
+									<input name="radio1" type="radio" checked>
+								</div>
+								<div class="mui-input-row mui-radio  mui-left">
+									<label id="timePicker">指定时间</label>
+									<input name="radio1" type="radio">
+								</div>
+							</div>
+						</div>
+						<div class="flexrow">
+							<div class="left">上课地址</div>
+							<div class="right ui-alert" id='addressPicker'>
+								<span id="addressResult">请选择地址</span>
+								<span class="mui-icon mui-icon-arrowdown"></span>
+							</div>
+						</div>
+					</li>-->
+				</ul>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="left">购买类型</div>
+					<div class="right coursetime" id="changetype">
+						<div class="mui-input-row mui-radio  mui-left" id="class">
+							<label>班课</label>
+							<input name="radion" type="radio" checked onclick ="Change();" value="0">
+						</div>
+						<div class="mui-input-row mui-radio  mui-left">
+							<label>一对一</label>
+							<input name="radion" type="radio" onclick ="Change();" value="1" id="only">
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="left">费用</div>
+					<div class="right">
+						￥<span id="price">0</span>
+						<span class="orange" id="returns"></span>
+					</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell todetail">
+					<div class="left">优惠</div>
+					<div class="right">
+						<span>无可用</span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell todetail">
+					<div class="left">正承卡/面值卡</div>
+					<div class="right">
+						<span>无可用</span>
+						<span class="mui-icon mui-icon-arrowright"></span>
+					</div>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="left">描述</div>
+					<div class="textarea">
+						<textarea rows="2" id="content"></textarea>
+					</div>
+				</li>
+			</ul>
+		</main>
+		<footer id="prepay">
+			<div>还需支付￥<span id="payamount">0</span></div>
+			<div>立即支付</div>
+		</footer>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.poppicker.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/root.js" ></script>
+		<script type="text/javascript" src="js/spelladd.js?v=1.0.1" ></script>
+	</body>
+
+</html>

@@ -1,0 +1,125 @@
+/*头像、信息、环形进度条*/
+main ul li .info{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 5rem;
+	align-self: center;
+	border-bottom: 1px solid rgb(237,237,237);
+}
+.info .img{
+	align-self: center;
+	background-image: url(../../image/head.png);
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 1.5rem;
+}
+.info .detail{
+	height: 3rem;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: space-around;
+	width: 50%;
+	line-height: 1rem;
+	padding-top: 0.1rem;
+}
+.info .detail .title{
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+.info .detail .time,.info .detail .jianshu{
+	width: 100%;
+	font-size: 0.65rem;
+	color: rgb(185,185,185);
+}
+.info .number{
+	width: 25%;
+	height: 3.6rem;
+	align-self: center;
+	text-align: center;
+}
+.info .number canvas{
+	display: inline-block;
+}
+.info .number p{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.info .number p span{
+	color: rgb(185,185,185);
+	font-size: 0.5rem;
+}
+
+
+/*图文详情*/
+.imgcontent{
+	display: flex;
+	justify-content: flex-start;
+	padding: 0.5rem 0;
+	height: 5.8rem;
+	border-bottom: 1px solid rgb(237,237,237);
+}
+.imgcontent .img{
+	width: 6rem;
+	height: 4.8rem;
+	position: relative;
+}
+.imgcontent .img .label{
+	position: absolute;
+	height: 1rem;
+	background: url(../../image/label.png) content-box no-repeat;
+	background-size: 100% 100%;
+	top: 0.3rem;
+	left: -0.15rem;
+}
+.imgcontent .img .label p{
+	font-size: 0.4rem;
+	color: #fff;
+	padding: 0 0.5rem;
+	line-height: 0.9rem;
+}
+.imgcontent .img img{
+	width: 100%;
+	height: 100%;
+}
+.imgcontent .detail{
+	height: 4.4rem;
+	align-self: center;
+	width: 68%;
+	padding-left: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.imgcontent .detail div:first-child{
+	height: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	line-height: 1rem;
+}
+.imgcontent .detail div:last-child{
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
+.imgcontent .detail .title{
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+.imgcontent .detail .miaoshu,.imgcontent .number{
+	font-size: 0.7rem;
+}
+.imgcontent .number{
+	display: inline-block;
+	padding: 0.3rem;
+}
+.imgcontent .detail .border{
+	border-right:1px solid rgb(237,237,237);
+	margin-right: 0.5rem;
+}

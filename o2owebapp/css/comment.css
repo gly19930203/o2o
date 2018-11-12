@@ -1,0 +1,187 @@
+
+/*顶部选项卡*/
+.mui-content{
+	padding: 0.6rem 0;
+	margin-bottom: 1.8rem;
+}
+.mui-content .contents{
+	padding: 0 0.6rem;
+}
+.mui-segmented-control{
+	padding: 0 0.6rem;
+	border: none;
+	display: flex;
+	justify-content:space-between;
+	z-index: 20;
+	background-color: rgb(237,237,237);
+}
+.mui-segmented-control .mui-control-item{
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	font-size: 0.7rem;
+	border: none;
+	background-color: rgb(179,137,87);
+	color: #fff;
+	width: 23%;
+}
+.mui-segmented-control .mui-control-item.mui-active{
+	background-color: #fff;
+	color: rgb(179,137,87);
+}
+ul li{
+	background-color: #fff;
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.mui-scroll-wrapper{
+	position: relative;
+	overflow: auto;
+}
+.mui-scroll,.mui-scrollbar{
+	position: relative;
+}
+
+
+/*评分*/
+.mui-control-content .score{
+	height: 3.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding:0 1rem;
+}
+.score .number{
+	font-size: 1.6rem;
+	align-self: center;
+	padding-right: 1rem;
+}
+.score .star{
+	align-self: center;
+	padding-right: 0.8rem;
+}
+.star p{
+	font-size: 0.6rem;
+	line-height: 1.2rem;
+}
+.star p i{
+	font-size: 0.8rem;
+	margin-right: 0.2rem;
+}
+.star p span{
+	font-size: 0.6rem;
+	padding-left: 0.8rem;
+}
+/*标签*/
+.labels{
+	max-height: 2.6rem;
+	width: 100%;
+	background-color: #fff;
+	padding:0 0.4rem;
+	overflow: hidden;
+	transition-duration:0.4s;
+	-moz-transition-duration:0.4s; /* Firefox 4 */
+	-webkit-transition-duration:0.4s; /* Safari and Chrome */
+	line-height: 1.2rem;
+}
+/*滚动*/
+.grade-w-roll{
+	max-height: 5.3rem;
+}
+.labels p{
+	display: inline-block;
+	font-size: 0.55rem;
+	padding: 0rem 0.6rem;
+	border:1px solid #d6d6d6;
+	border-radius: 1rem;
+	margin: 0 0.2rem 0.1rem 0;
+	line-height: 0.8rem;
+	color: rgb(217,217,217);
+}
+.labels p.active{
+	color: rgb(241,156,79);
+	border:1px solid rgb(241,156,79);
+}
+.labels p span{
+	padding-left: 0.2rem;
+}
+.arrowdown{
+	height: 1rem;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	line-height:1rem;
+	margin-top: -1px;
+}
+.arrowdown .mui-icon-arrowdown,.arrowdown .mui-icon-arrowup{
+	font-size: 0.8rem;
+	color: rgb(217,217,217);
+}
+/*评价列表*/
+.comment li{
+	padding: 0.4rem;
+	border-top: 1px solid rgb(249,249,249);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.comment li .commentimg{
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 1.3rem;
+	background-image: url(../image/headerimg.png);
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 0.4rem;
+}
+.comment li .comments{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 79%;
+}
+.comments .customer{
+	height: 2.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	margin-top: 0.2rem;
+	width: 100%;
+	line-height: 1rem;
+}
+.comments .customer .name{
+	font-size: 0.8rem;
+}
+.comments .customer .star{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.comments .customer .star i{
+	font-size: 0.8rem;
+}
+.comments .customer .star .time{
+	font-size: 0.6rem;
+	color: rgb(174,174,174);
+}
+.comments .words{
+	font-size: 0.6rem;
+	line-height: 0.8rem;
+	margin-top: 0.2rem;
+}
+.comments .imgs{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 0.2rem;
+}
+.comments .imgs img{
+	width: 4.5rem;
+	height: 4.5rem;
+	margin-right: 0.3rem;
+}

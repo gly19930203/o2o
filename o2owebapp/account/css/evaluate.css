@@ -1,0 +1,174 @@
+ul li{
+	background-color: #fff;
+	margin-bottom: 0.3rem;
+}
+.top{
+	border-bottom: 1px solid #EDEDED;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding: 0.6rem;
+	line-height: 2rem;
+}
+.top .img{
+	width: 2rem;
+	height: 2rem;
+}
+.top .img img{
+	width: 100%;
+	height: 100%;
+}
+.top .eval {
+	width: 16rem;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+}
+.top .eval .mui-inline{
+	font-size: 0.8rem;
+	color: #454545;
+	width: 4.5rem;
+}
+/*评分*/
+.el-rate{
+	width: 11.5rem;
+	height: 2rem !important;
+	line-height: 2rem !important;
+}
+.el-rate__item{
+	vertical-align: unset !important;
+	font-size: 1.2rem !important;
+}
+.el-rate__icon{
+	font-size: 1.2rem !important;
+	margin-right: 0.3rem !important;
+	color: rgb(241,156,79) !important;
+}
+[class*=" el-icon-"]{
+	line-height: unset !important;
+}
+.el-rate__text{
+	font-size: 0.8rem !important;
+	color: #adadad !important;
+	padding-left: 1.2rem;
+	vertical-align: top !important;
+}
+
+
+.evaluate{
+	padding: 0.6rem;
+	border-bottom: 1px solid #EDEDED;
+}
+.evaluate textarea{
+	padding: 0;
+	font-size: 0.75rem;
+	border:none;
+	line-height: 1rem;
+}
+.evaluate textarea::-webkit-input-placeholder{
+	color: #BBBBBB;
+}
+/*图片*/
+.el-upload--picture-card,.el-upload-list--picture-card .el-upload-list__item{
+	width: 6rem !important;
+	height: 6rem !important;
+	line-height: 6rem !important;
+	margin: 0 0.2rem 0.2rem 0 !important;
+}
+
+/*匿名*/
+.niming{
+	padding: 0 0.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	line-height: 2.4rem;
+}
+.mui-checkbox.mui-left label{
+	font-size: 0.7rem;
+}
+.niming .right{
+	font-size: 0.6rem;
+	color: #BBBBBB;
+}
+.niming .el-checkbox__inner{
+	width: 1rem !important;
+	height: 1rem !important;
+	border-radius: 0.5rem !important;
+}
+.niming .el-checkbox__label{
+	font-size: 0.75rem !important;
+	line-height: 2.4rem !important;
+	padding-left: 0.3rem !important;
+}
+.niming .el-checkbox__input{
+	line-height: 1rem !important;
+}
+.niming .el-checkbox__input.is-checked .el-checkbox__inner{
+	background-color: rgb(243,156,80) !important;
+	border-color: rgb(243,156,80) !important;
+}
+.niming .el-checkbox__inner::after{
+	height: 0.5rem !important;
+	left: 0.3rem !important;
+	top: 0.07rem !important;
+	width: 0.21rem !important;
+	border-right-width: 2px !important;
+	border-bottom-width: 2px !important;
+}
+.niming .el-checkbox__input.is-checked+.el-checkbox__label,
+.niming .el-checkbox{
+	color: rgb(123,123,123);
+}
+.niming .el-checkbox__inner{
+	border-color: #dcdfe6 !important;
+}
+/*标签*/
+.labels{
+	width: 100%;
+	background-color: #fff;
+	padding:0 0.6rem;
+	padding-top: 0.4rem;
+	line-height: 1.2rem;
+}
+.el-checkbox-button{
+	display: inline !important;
+}
+.el-checkbox-button .el-checkbox-button__inner{
+	padding: 0 !important;
+	border:none !important;
+	color: rgb(217,217,217) !important;
+	line-height: 0.8rem !important;
+	display: inline-block !important;
+	font-size: 0.6rem !important;
+	padding: 0.1rem 0.6rem !important;
+	border:1px solid #d6d6d6 !important;
+	border-radius: 1rem !important;
+	margin: 0 0.4rem 0.4rem 0 !important;
+	line-height: 0.8rem !important;
+}
+.el-checkbox-button.is-checked .el-checkbox-button__inner{
+	color: rgb(241,156,79) !important;
+	border:1px solid rgb(241,156,79) !important;
+	background-color: #fff !important;
+	box-shadow: none !important;
+	-webkit-box-shadow:none !important;
+}
+footer{
+	width: 20rem;
+	display: flex;
+}
+button.save{
+	display: inline-block;
+	margin: 2rem auto;
+	width: 16rem;
+	border: none;
+	font-size: 0.9rem;
+	padding: 0.4rem 0;
+}
+[v-cloak] {
+  display: none;
+}
+.el-message{
+	min-width: 16rem !important;
+}

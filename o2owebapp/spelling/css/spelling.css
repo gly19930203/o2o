@@ -1,0 +1,136 @@
+/*筛选*/
+.screen{
+	width: 100%;
+	height: 2.7rem;
+	top: 0;
+	z-index: 1;
+	position: fixed;
+}
+ul.screen-tab{
+	margin-top: -0.4rem;
+}
+/*加载*/
+#pullrefresh{
+	padding: 0.6rem;
+	padding-bottom: 0;
+}
+.mui-scroll{
+	position: relative;
+}
+/*内容*/
+main{
+	top: 1.9rem;
+	bottom: 0;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	border-top-left-radius: 0.8rem;
+	border-top-right-radius: 0.8rem;
+	overflow:auto;
+	background-color: #EFEFF4;
+}
+main ul li{
+	background-color: #fff;
+	padding: 0 0.5rem;
+	border-radius: 0.4rem;
+	margin-bottom: 0.2rem;
+} 
+
+.status{
+	display: flex;
+	justify-content:space-between;
+	border-bottom: 1px solid rgb(237,237,237);
+}
+.status p {
+	color: rgb(185,185,185);
+	line-height: 1.4rem;
+	font-size: 0.65rem;
+}
+.status p.time{
+	width: 42%;
+}
+.status p.school{
+	width: 32%;
+}
+.status p.over{
+	width: 26%;
+	text-align: center;
+}
+.status p .orange{
+	font-size: 0.8rem;
+}
+.status p .iconfont.orange{
+	padding-right: 0.3rem;
+}
+
+/*按钮*/
+.bottom{
+	padding: 0.6rem;
+}
+.bottom button{
+	border: 0;
+	width: 9rem;
+	height: 1.4rem;
+	border-radius: 0.7rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0;
+	line-height: 1.4rem;
+}
+.bottom button span.word{
+	width: 7.7rem;
+	font-size: 0.7rem;
+	padding-left: 1.6rem;
+}
+.bottom button span.mui-icon{
+	width: 1.3rem;
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+}
+.bottom button:active{
+	background-color: rgb(241,156,79);
+	color: #fff;
+}
+/*筛选*/
+.screen-content{
+	top: 2.5rem;
+}
+.grade-w-roll{
+	top: 1.9rem;
+}
+.dizhia-w,.dizhia-t{
+	height: 15rem !important;
+}
+
+
+/*课表*/
+#demo,#ca {
+	width: 100%;
+	height: 15rem;
+	background-color: #fff;
+}
+
+#dt {
+	margin: 30px auto;
+	height: 28px;
+	width: 200px;
+	padding: 0 6px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+.screen-content ul#date #demo li{
+	padding: 0;
+}
+.screen-content>ul#date{
+	overflow: hidden;
+}
+.calendar-views .days,.calendar-views .week{
+	padding-right: 1.81rem;
+	padding-left: 1.81rem;
+}
+.calendar-ct.month-items{
+	width: 20rem !important;
+	padding-right: 1.8rem;
+	padding-left: 1.8rem;
+}

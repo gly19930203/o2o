@@ -1,0 +1,126 @@
+/*头部*/
+header{
+	padding: 1.2rem;
+	position:relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+header .tea-img{
+	background-image: url(../../image/head.png);
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 1.8rem;
+}
+header .tea-info{
+	width: 12.2rem;
+	align-self: center;
+	position: relative;
+}
+.tea-info .infos{
+	width: 100%;
+	border-bottom: 0.1rem solid rgb(240,224,204);
+	padding-bottom: 0.2rem;
+}
+.tea-info .infos .name{
+	font-size: 0.8rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.tea-info .infos .icon-hot{
+	font-size: 1rem;
+}
+.tea-info .infos .icon-hot{
+	position: absolute;
+	top: -0.6rem;
+}
+.tea-info .infos .icon-nv,.tea-info .infos .icon-nan{
+	padding-left: 1.2rem;
+	font-size: 0.7rem;
+	color: rgb(240,224,204);
+}
+.tea-info .labels{
+	padding: 0.2rem 0 0 0;
+	color: rgb(240,224,204);
+	font-size: 0.6rem;
+	background-color: rgb(179,137,87);
+	line-height: 0.9rem;
+}
+/*内容*/
+.mui-content{
+	margin-bottom: 1.8rem;
+}
+/*课程*/
+ul#content li:first-child{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+ul#content li:first-child .todetail{
+	border-top-right-radius: 0;
+}
+/*相册*/
+.imglist{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap:wrap
+}
+.imglist img{
+	width: 5.9rem;
+	height: 5.9rem;
+	margin-bottom: 0.15rem;
+	margin-right: 0.1rem;
+}
+#item3{
+	padding: 0 0.4rem;
+}
+.photo{
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.7rem;
+	color: rgb(163,163,163);
+}
+
+/*人气*/
+.popular{
+	position: absolute;
+	right: 0;
+	top: 0.8rem;
+	background-color: #fff;
+	padding: 0.1rem 0.3rem;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	font-size: 0.7rem;
+}
+.popular .icon-hot1{
+	font-size: 0.8rem;
+}
+/*详细信息*/
+#item4{
+	background-color: #fff;
+}
+/*底部*/
+footer{
+	line-height: 1.8rem;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 30;
+	left: 0;
+	background-color: rgb(179,137,87);
+	text-align: center;
+	color: #fff;
+	font-size: 0.7rem;
+}
+/*跳转首页*/
+.toIndex{
+	position: fixed;
+	bottom: 2rem;
+	right: 0.5rem;
+}
+.toIndex .icon-weibiaoti1{
+	font-size: 1.5rem;
+}

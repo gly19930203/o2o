@@ -1,0 +1,82 @@
+main{
+	padding: 0.6rem;
+}
+main ul li{
+	margin-bottom: 0.3rem;
+	background-color: #fff;
+	border-top-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+}
+main ul li>.title{
+	width: 100%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	padding: 0 0.5rem;
+	border-top-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+	font-size: 0.7rem;
+}
+/*图文详情*/
+main ul li .list{
+	padding: 0 0.5rem;
+}
+.imgcontent{
+	display: flex;
+	justify-content:space-between;
+	padding: 0.5rem 0;
+	height: 5.8rem;
+	border-bottom: 1px solid rgb(237,237,237);
+}
+.imgcontent .img{
+	height: 4.8rem;
+	width: 6rem;
+}
+.imgcontent .img img{
+	width: 100%;
+	height: 100%;
+}
+.imgcontent .detail{
+	width: 62%;
+	height: 4.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.imgcontent .detail .top{
+	height: 3rem;
+	line-height: 1.4rem;
+}
+.imgcontent .detail .top p{
+	font-size: 0.7rem;
+}
+.imgcontent .detail .top p.title{
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+.imgcontent .detail .bottom{
+	font-size: 0.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.imgcontent .detail .bottom p{
+	padding-left: 2rem;
+}
+.imgcontent .detail .bottom p .number{
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+.payment{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 1.4rem;
+	line-height: 1.4rem;
+}
+.payment p{
+	font-size: 0.65rem;
+	color: rgb(185,185,185);
+}
+.payment p .orange{
+	padding-left: 1rem;
+}

@@ -1,0 +1,67 @@
+ul#content li{
+	padding: 0.4rem;
+	padding-right: 0;
+	border-radius: 0.4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	height: 5rem;
+	margin-bottom: 0.2rem;
+}
+ul#content li .img{
+	width: 5.25rem;
+	height: 4.2rem;
+}
+ul#content li .img img{
+	width: 100%;
+	height: 100%;
+}
+ul#content li .detail{
+	height: 4.3rem;
+	align-self: center;
+	width: 63.2%;
+	padding-left: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+ul#content li .detail div:first-child{
+	line-height: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+ul#content li .detail div:last-child{
+	height: 1.2rem;
+	line-height: 1.2rem;
+}
+ul#content li .detail .title{
+	font-size: 0.85rem;
+	font-weight: bold;
+}
+ul#content li .detail .miaoshu,ul#content li .number{
+	font-size: 0.7rem;
+	vertical-align: middle;
+}
+ul#content li .number{
+	display: inline-block;
+	padding: 0.3rem;
+}
+ul#content li .detail .border{
+	border-right:1px solid rgb(237,237,237);
+	margin-right: 0.5rem;
+}
+ul#content li .todetail{
+	width: 1.5rem;
+	height: 5rem;
+	background-color: rgb(222,191,154);
+	margin-top: -0.4rem;
+	color: #fff;
+	border-bottom-right-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+}
+ul#content li .todetail span.mui-icon-extra{
+	font-size: 1.1rem;
+	line-height: 5rem;
+}

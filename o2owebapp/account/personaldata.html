@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/personaldata.css" />
+	</head>
+
+	<body>
+		<div id="app" v-cloak>
+			<header class="bg-white">
+				<div>用户头像</div>
+				<div class="headimg">
+					<el-upload class="avatar-uploader"
+					  :headers="headers"
+					  :action="uploadUrl"
+					  :show-file-list="false"
+					  :on-success="handleAvatarSuccess"
+					  :before-upload="beforeAvatarUpload">
+					  <img v-if="imageUrl" :src="img_host+imageUrl" class="avatar">
+                      <img v-else src="/o2owebapp/image/head.png" class="avatar">
+					</el-upload>
+				</div>
+			</header>
+			<main>
+				<ul class="list">
+					<li>
+						<span>
+							手机号码
+						</span>
+						<span class="right">
+							<input type='tel'  placeholder="输入手机号码" v-model="info.f_phone"/>
+						</span>
+					</li>
+					<li>
+						<span>
+							姓名
+						</span>
+						<span class="right">
+							<input type='text'  placeholder="输入您的真实姓名" v-model="info.f_name"/>
+						</span>
+					</li>
+					<li>
+						<span>
+							性别
+						</span>
+						<span class="right sex">
+							<el-switch  v-model="info.f_sex" active-text="男" inactive-text="女"></el-switch>
+						</span>
+					</li>
+					<li>
+						<span>
+							出生日期
+						</span>
+						<div class="right" @click="GetDate" id="date">
+							<span v-if="info.f_birthday">
+								{{info.f_birthday}}
+							</span>
+							<span v-else>
+								出生日期
+							</span>
+							<span class="mui-icon mui-icon-arrowdown"></span>
+						</div>
+					</li>
+				</ul>
+				<ul class="list">
+					<li>
+						<span>
+							家庭地址
+						</span>
+						<div class="textarea">
+							<textarea rows="1" v-model="info.f_address"></textarea>
+						</div>
+					</li>
+					<li>
+						<span>
+							职业
+						</span>
+						<span class="right">
+							<input type='text'  placeholder="输入您的职业" v-model="info.f_occupation"/>
+						</span>
+					</li>
+				</ul>
+			</main>
+			<footer>
+				<button class="bg-brown white save" @click="Save">保存</button>
+			</footer>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.min.js"></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+		<script type="text/javascript" src="../js/root.js"></script>
+		<script type="text/javascript" src="js/personaldata.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,105 @@
+/*内容*/
+#pullrefresh{
+	padding: 0.6rem;
+}
+.mui-scroll{
+	width: 18.8rem;
+}
+ul#content li{
+	position: relative;
+}
+.imgcontent .img .label{
+	position: absolute;
+	height: 1rem;
+	background: url(../../image/label.png) content-box no-repeat;
+	background-size: 100% 100%;
+	top: 0.5rem;
+	left: -0.15rem;
+}
+.imgcontent .img .label p{
+	font-size: 0.4rem;
+	color: #fff;
+	padding: 0 0.5rem;
+	line-height: 0.9rem;
+}
+
+/*上课老师*/
+ul#content li.teacher{
+	height: 4.4rem;
+	padding: 0.4rem;
+	padding-right: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #fff !important;
+	margin-bottom: 0.2rem;
+	position: relative;
+}
+ul#content li.teacher .img{
+	background:url(../../image/3-141014100632.jpg);
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 3.6rem;
+	height: 3.6rem;
+	border-radius: 1.8rem;
+}
+ul#content li.teacher .detail{
+	width: 66%;
+	height: 3rem;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+ul#content li.teacher .detail p {
+	align-content: center;
+	line-height: 0.8rem;
+}
+ul#content li.teacher .detail p .name{
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+ul#content li.teacher .detail p .iconfont{
+	font-size: 0.8rem;
+	color: rgb(135,174,204);
+	padding-left: 1rem;
+	vertical-align: middle;
+	line-height: 0.8rem;
+}
+ul#content li.teacher .detail p.autograph{
+	font-size: 0.6rem;
+	width: 100%;
+}
+ul#content li.teacher .detail p.concern{
+	font-size: 0.5rem;
+	color: rgb(165,165,165);
+}
+ul#content li.teacher .todetail{
+	width: 1.5rem;
+	height: 4.4rem;
+	background-color: rgb(222,191,154);
+	margin-top: -0.4rem;
+	color: #fff;
+	line-height: 4.4rem;
+	text-align: center;
+}
+ul#content li.teacher .todetail .mui-icon-extra{
+	font-size: 1rem;
+	line-height: 4.4rem;
+}
+.teacher .img .label{
+	position: absolute;
+	height: 1rem;
+	background: url(../../image/label.png) content-box no-repeat;
+	background-size: 100% 100%;
+	top: 0.3rem;
+	left: -0.15rem;
+}
+.teacher .img .label p{
+	font-size: 0.4rem;
+	color: #fff;
+	padding: 0 0.5rem;
+	line-height: 0.9rem;
+}
